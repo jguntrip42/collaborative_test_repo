@@ -1,0 +1,43 @@
+
+
+
+git init: creates new git repo in current directory
+
+git status: shows current state of workspace (staged and unstaged files)
+git commit: commits changes to local repo
+git log: shows history of commits (across branches)
+git rm: removes file (automatically stages deletion I think)
+git restore: restores file and stages it
+
+
+git pull: pulls any changes that have occurred in the remote repo (performs git fetch and git merge together)
+git push: pushes local repo to remote repo
+
+git fetch: retrieves commits from online branches as parallel branches (for local merging)
+
+git remote -v: displays connected remote repo
+git remote remove origin: disconnect from online repo
+git clone [link_to_online_repo]: makes local copy of specified online repo in current directory (retains connection to online repo)
+git remote add origin [link_to_online_repo]: connect to specified remote repo
+
+Branching
+
+git branch [branch_name]: creates new branch
+git switch [branch_name]: switches to branch
+git branch -v: displays branches with their most recent commits, indicating current branch
+git branch --all: displays all branches (including online repo branch)
+git log --oneline --decorate --graph --all: displays all branches and commits with brief commit description
+git merge [branch_name]: merges changes in [branch_name] to current branch
+git branch -d [branch_name]: deletes branch
+
+git branch -u origin [branch_name]: pushes to new branch in online repo
+git diff: displays merge conflicts
+
+
+
+Good practice
+
+-Seems to be general practice to make python package, install it locally (making it editable if desired so updates are carried forward), then host it on github via commits and push.
+-Use different (online) branches for different workflows
+-Try to avoid multiple people working on the same branch at the same time
+
