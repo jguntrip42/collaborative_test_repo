@@ -24,13 +24,14 @@ Branching
 
 git branch [branch_name]: creates new branch
 git switch [branch_name]: switches to branch
+git checkout [branch_name]: switches to branch, can also restore older file versions
 git branch -v: displays branches with their most recent commits, indicating current branch
-git branch --all: displays all branches (including online repo branch)
-git log --oneline --decorate --graph --all: displays all branches and commits with brief commit description
+git branch --all: displays all branches (including online repo branches)
 git merge [branch_name]: merges changes in [branch_name] to current branch
 git branch -d [branch_name]: deletes branch
 
-git branch -u origin [branch_name]: pushes to new branch in online repo
+git branch origin [branch_name]: pushes local branch to new branch in online repo
+git branch -u origin [branch_name]: pushes (changes) to online branch [branch_name]
 git diff: displays merge conflicts
 
 
