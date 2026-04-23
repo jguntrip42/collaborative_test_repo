@@ -4,7 +4,7 @@
 git init: creates new git repo in current directory
 
 git status: shows current state of workspace (staged and unstaged files)
-git commit: commits changes to local repo
+git commit -m "[commit_message]": commits changes to local repo
 git log: shows history of commits (across branches)
 git rm: removes file (automatically stages deletion I think)
 git restore: restores file and stages it
@@ -27,7 +27,7 @@ git switch [branch_name]: switches to branch
 git checkout [branch_name]: switches to branch, can also restore older file versions
 git branch -v: displays branches with their most recent commits, indicating current branch
 git branch --all: displays all branches (including online repo branches)
-git merge [branch_name]: merges changes in [branch_name] to current branch
+git merge [branch_name] -m "[merge_message]": merges changes in [branch_name] to current branch
 git branch -d [branch_name]: deletes branch
 
 git branch origin [branch_name]: pushes local branch to new branch in online repo
