@@ -36,9 +36,16 @@ git diff: displays merge conflicts
 
 
 
+
+General notes (defaults etc.)
+
+By default, git pull fetches and merges changes from the remote branch that your current branch is tracking
+Checking out a local branch from a remote-tracking branch automatically creates what is called a “tracking branch” (and the branch it tracks is called an “upstream branch”). Tracking branches are local branches that have a direct relationship to a remote branch. If you’re on a tracking branch and type git pull, Git automatically knows which server to fetch from and which branch to merge in.
+
 Good practice
 
 -Seems to be general practice to make python package, install it locally (making it editable if desired so updates are carried forward), then host it on github via commits and push.
 -Use different (online) branches for different workflows
 -Try to avoid multiple people working on the same branch at the same time
+-Even with online branches I think one should merge locally, and then push to main (I'm not sure if it's even possible to directly merge online or upstream branches)
 
