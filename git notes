@@ -32,6 +32,8 @@ git branch -d [branch_name]: deletes branch
 
 git branch origin [branch_name]: pushes local branch to new branch in online repo
 git branch -u origin [branch_name]: pushes (changes) to online branch [branch_name]
+
+git show -m: shows merged data
 git diff: displays merge conflicts
 
 
