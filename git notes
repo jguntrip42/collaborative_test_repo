@@ -24,7 +24,7 @@ Branching
 
 git branch [branch_name]: creates new branch
 git switch [branch_name]: switches to branch
-git checkout [branch_name]: switches to branch, can also restore older file versions
+git checkout [branch_name]: switches to branch, can also restore older file versions, makes new local branch if one checkouts from an online repo branch
 git branch -v: displays branches with their most recent commits, indicating current branch
 git branch --all: displays all branches (including online repo branches)
 git merge [branch_name] -m "[merge_message]": merges changes in [branch_name] to current branch
