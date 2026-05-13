@@ -14,3 +14,11 @@ print("hello world")
 print("New code added in joebranch to push to online repo")
 
 print("Second modification in new branch")
+
+
+
+def new_func():
+    print("This function was added as part of my workflow_task")
+    
+    
+new_func()
