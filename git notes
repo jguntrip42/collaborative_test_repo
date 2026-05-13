@@ -30,7 +30,7 @@ git branch --all: displays all branches (including online repo branches)
 git merge [branch_name] -m "[merge_message]": merges changes in [branch_name] to current branch
 git branch -d [branch_name]: deletes branch
 
-git branch origin [branch_name]: pushes local branch to new branch in online repo
+git push --set-upstream origin: pushes local branch to new branch in online repo (with same name)
 git branch -u origin [branch_name]: pushes (changes) to online branch [branch_name]
 
 git show -m: shows merged data
